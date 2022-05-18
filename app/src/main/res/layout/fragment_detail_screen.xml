@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragements.DetailScreen">
+
+
+        <ImageView
+            android:id="@+id/imagedetail"
+            android:layout_width="187dp"
+            android:layout_height="189dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintBottom_toTopOf="@+id/nomdetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Detail"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/Detail"
+            android:layout_width="165dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="32dp"
+            android:text="Detail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.017"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nomdetail"
+            android:layout_width="185dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="27dp"
+            android:text="nomdetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagedetail" />
+
+        <TextView
+            android:id="@+id/prixdetail"
+            android:layout_width="96dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="48dp"
+            android:text="Prixdetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nomdetail" />
+
+        <Button
+            android:id="@+id/Buybutton"
+            android:layout_width="159dp"
+            android:layout_height="47dp"
+            android:backgroundTint="@color/primary"
+            android:text="Buy"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prixdetail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
